@@ -1,4 +1,7 @@
-﻿@{
+﻿@model IEnumerable<GitTest.Models.ApplicationUser>
+@{
     ViewBag.Title = "Home Page";
 }
-ЖЕКА NEN
+@foreach (var a in Model) {
+<span>@a.UserName</span>
+}
